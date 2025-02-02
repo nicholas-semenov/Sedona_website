@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<header class="header container">
+				 <div class="logo">
+					 <img class="navigation-item-logo_image" width="138" height="70" src="img/sedona-logo.png" alt="Sedona logo">
+	       </div>
+				 <nav class="web_navigation">
+					 <ul class="site-navigation">
+						 <li class="main-navigation-item main-navigation-item_1">
+							 <a href="index.html" style="color:#796355" class="main-navigation-link">Информация</a></li>
+		         <li class="main-navigation-item main-navigation-item_2">
+							 <a href="foto.html" class="main-navigation-link">Фото и видео</a></li>
+		         <li class="main-navigation-item main-navigation-item_3">
+		          	<a href="#map" class="main-navigation-link">Карта штата</a></li>
+		         <li class="main-navigation-item main-navigation-item_4">
+							 <a href="hostel.html" class="main-navigation-link">Гостиницы</a>
+		         </li>
+		        </ul>
+	      </nav>
+	  </header>
+		<main class="body container">
+			<div class="intro">
+				<img class="logo_welcome" src="img/welcome.png" alt="">
+				<img class="mont" src="img/showcase-shape.png" alt="">
+			</div>
+			 <div class="post">
+				 <h2 class="sedona-text">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зacлуживающий большего!</h2>
+				 <p class="sedona-causes">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+	  	 </div>
+			 <div class="number-1">
+					<div class="main-real_city">
+						<h3 class="advantages-item-titel-1">НАСТОЯЩИЙ<br> ГОРОДОК</h3>
+						<p class="advantages-item-number-1">- №1 -</p>
+						<p class="advantages-item-info-1"> СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br> ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+					</div>
+					<img class="foto-1" src="img/sedona-photo1.jpg" alt="Фото">
+				</div>
+				<div class="main-info">
+					<ul class="info-1">
+						<li class="item-1">
+							<img src="img/house-icon.svg" class="house-icon" width=75 height=72 alt="svg"> <br>
+							<b class="slogan-1">ЖИЛЬЕ</b>
+							<p class="lead-1">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br> МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+						</li>
+						<li class="item-2">
+							<img src="img/burger-icon.svg" class="burger-icon" width=74 height=70 alt="svg"> <br>
+							<b class="slogan-2">ЕДА</b>
+							<p class="lead-2">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+						</li>
+						<li class="item-3">
+							<img src="img/gift-icon.svg" class="gift-icon" width=74 height=70 alt="svg"> <br>
+							<b class="slogan-3">СУВЕНИРЫ</b>
+							<p class="lead-3">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br> ПРОИЗВОДСТВА!</p>
+						</li>
+					</ul>
+				</div>
+			<div class="number-2">
+					<img class="foto-2" src="img/sedona-photo2.jpg" alt="Фото">
+					<div class="main-devil_bridge">
+						<h3 class="advantages-item-titel-2">ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h3>
+						<p class="advantages-item-number-2">- №2 -</p>
+						<p class="advantages-item-info-2">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
+					</div>
+				</div>
+			<div class="main-places_sedona">
+					<ul class="info-2">
+						<li class="item-news-1">
+							<h3 class="titel-3">НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h3>
+							<p class="number-3">- №3 -</p>
+							<p class="tagline-3">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+						</li>
+						<li class="item-news-2">
+							<h3 class="titel-4">КРАСИВАЯ<br> ДОРОГА</h3>
+							<p class="number-4">- №4 -</p>
+							<p class="tagline-4">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО!</p>
+						</li>
+						<li class="item-news-3">
+							<h3 class="titel-5">МАЛО<br> ТУРИСТОВ</h3>
+							<p class="number-5">- №5 -</p>
+							<p class="tagline-5">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И<br> ТОЛПИТСЯ ТАМ</p>
+						</li>
+					</ul>
+			</div>
+			<div class="main-search-block">
+					<h2 class="titel-question">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+					<p class="important">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+					<button class="button"><b>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</b></button>
+			</div>
+			<section class="modal">
+				<form class="main-reservation-form">
+					<p>
+						<label class="date-arrival-label">Дата заезда:</label>
+							<input type="text" value="24 апреля 2020" id="arrival_date" class="arrival-date" onClick="xCal()" onKeyUp="xCal()" oninput="xCal()">
+							<a href="" onClick="return xCal('arrival_date','-',1)"><img class="calendar" src="img/calendar.svg" alt=""></a>
+					</p>
+					<p>
+						<label class="date-departure-label">Дата выезда:</label>
+							<input type="text" id="date_of_departure" value="4 июля 2020" class="date-of-departure" onClick="xCal()" onKeyUp="xCal()" oninput="xCal()">
+							<a href="" onClick="return xCal('date_of_departure','-',1)"><img class="calendar" src="img/calendar.svg" alt=""></a>
+					</p>
+					<div class="guest-amount-wrapper">
+						<span class="subtitle-1">Взрослые:</span>
+						<div>
+							<input class="minus-amount" type="button"  value='-' onclick="minus1()">
+							<input type="text" name='adults-amount' id="amount_of_adults" class="amount-of-adults" value='2'>
+							<input class="plus-amount" type="button"  value='+' onclick="plus1()">
+						</div>
+						<span class="subtitle-2">Дети:</span>
+						<div>
+							<input class="minus-amount" type="button"  value='-' onclick="minus2()">
+							<input type="text" name='children-amount' id="children_of_amount" class="children-of-amount" value='0'>
+							<input class="plus-amount" type="button"  value='+' onclick="plus2()">
+						</div>
+					</div>
+					<button class="submit-reservation-form"><b>НАЙТИ</b></button>
+				</form>
+			</section>
+			<section class="map">
+				<iframe id="map" src="https://www.google.com/maps/d/embed?mid=zgoB38dwcy1c.kicKgWgtcwcc" width="1200" height="472"></iframe>
+			</section>
+		</main>
+		<footer class="footer container">
+				<div class="main-footer">
+					<p class="hash">#VISITSEDONA</p>
+					<ul class="footer-info">
+						<li class="item-footer-1">
+							<a href="https://twitter.com/SedonaAZ" class="twitter-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 242.667 242.667" style="enable-background:new 0 0 242.667 242.667;" xml:space="preserve" width="46px" height="46px" class=""><g><path d="M0,0v242.667h242.667V0H0z M186.132,86.443c-4.15,3.618-8.725,6.703-8.725,6.703s3.653,15.464-6.562,38.872  c-10.215,23.409-32.204,41.568-55.613,45.54c-23.408,3.972-35.751,1.561-45.257-1.135c-9.505-2.695-19.72-9.789-19.72-9.789  s16.599,0.426,26.813-2.979c10.215-3.405,16.173-8.512,16.173-8.512s-10.924-0.851-19.578-8.512  c-8.654-7.661-9.08-13.336-9.08-13.336s4.54,0.993,8.938,0.993s5.107-0.284,5.107-0.284s-12.343-3.405-19.152-14.613  c-6.81-11.208-5.107-15.464-5.107-15.464s2.554,2.128,7.094,3.547c4.54,1.419,7.235,0.426,7.235,0.426s-11.633-6.384-12.484-19.72  c-0.851-13.336,3.547-19.578,3.547-19.578s7.945,14.471,28.09,22.699s32.346,7.661,32.346,7.661s-6.242-22.983,17.592-32.914  c23.834-9.931,34.049,7.661,34.049,7.661s7.484-2.164,10.995-3.972s5.639-4.15,5.639-4.15s-1.171,4.894-4.256,8.938  c-3.086,4.043-7.448,7.874-7.448,7.874s4.682-1.17,8.831-2.554c4.15-1.383,6.81-2.447,6.81-2.447S190.282,82.825,186.132,86.443z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#76B3D6"/></g> </svg>
+							</a>
+						</li>
+						<li class="item-footer-2">
+							<a href="https://www.facebook.com/VisitSedona" class="fb-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="46px" height="46px" class=""><g><path d="M0,0v455h455V0H0z M301.004,125.217H265.44  c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771  v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#76B3D6"/></g> </svg>
+							</a>
+						</li>
+						<li class="item-footer-3">
+							<a href="https://www.youtube.com/user/SedonaAZ1/featured" class="youtube-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 242.667 242.667" style="enable-background:new 0 0 242.667 242.667;" xml:space="preserve" width="46px" height="46px"><g><path d="M106.955,94.325l39.161,27.008l-39.161,27.008V94.325z M242.667,0v242.667H0V0H242.667z M190.25,101.494  c0-16.378-13.277-29.655-29.655-29.655H82.072c-16.378,0-29.655,13.277-29.655,29.655v39.679c0,16.378,13.277,29.655,29.655,29.655  h78.523c16.378,0,29.655-13.277,29.655-29.655V101.494z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#76B3D6"/></g> </svg>
+							</a>
+						</li>
+					</ul>
+					<a class="htmlacademy" href="#">
+						<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="195px" height="50px" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title><path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)" fill="#231f20"/></svg>
+					</a>
+				</div>
+		</footer>
+		<script src="js/popup.js"></script>
+		<script type="text/javascript" src="js/cssworld.ru-xcal-en.js"></script>
+	</body>
+</html>
